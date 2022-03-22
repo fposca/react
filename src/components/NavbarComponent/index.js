@@ -13,9 +13,9 @@ const NavbarComponent = () => {
        
         <nav className="nav">
             <ul className="menu">
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blog</a> </li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Empresa</a> </li>
+                <li><a href="#"><div className="tooltip carrito"><span className="tooltiptext">Carrito</span></div> </a></li>
             </ul>
         </nav>
     </header>
