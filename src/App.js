@@ -1,7 +1,8 @@
 
 import './App.css';
-import ComponenteA from './components/ComponenteA';
-import ComponenteB from './components/ComponenteB';
+import NavbarComponent from './components/NavbarComponent';
+import BodyComponent from './components/BodyComponent';
+import FooterComponent from './components/FooterComponent';
 
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
   
   return (
     <div>
-     <ComponenteA />
-     <ComponenteB firstName={bienvenido} />
+     <NavbarComponent />
+     <BodyComponent firstName={bienvenido} />
+     <FooterComponent></FooterComponent>
   
  
     </div>

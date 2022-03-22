@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css"
 
-const ComponenteA = () => {
+const NavbarComponent = () => {
     
     return (
         <> <header className="header">
@@ -25,4 +25,4 @@ const ComponenteA = () => {
     )
 }
 
-export default ComponenteA;
+export default NavbarComponent;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css"
 
-const ComponenteB = ({firstName} ) => {
+const BodyComponent = ({firstName} ) => {
     
     return (
         <><p className="bienvenido">{firstName}</p>
@@ -11,4 +11,4 @@ const ComponenteB = ({firstName} ) => {
     )
 }
 
-export default ComponenteB;
+export default BodyComponent;
