@@ -3,7 +3,7 @@
 
 :root{
     --white: #f9f9f9;
-    --black: #36383F;
+    --black: #984a8d;
     --grey: #85888C;
 }
 
@@ -39,8 +39,12 @@ ul{
 /* Logo */
 .logo{
     display: inline-block;
-    color: var(--white);
-    font-size: 60px;
+    background-image: url(fernando-posca.svg);
+    width: 105px;
+    height: 90px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     margin-left: 10px;
 
 }
@@ -62,9 +66,7 @@ ul{
 
 }
 
-.menu a:hover{
-    background-color: var(--grey);
-}
+
 
 .nav{
     max-height: 0;
@@ -147,7 +149,7 @@ ul{
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+   
   }
   
   .tooltip .tooltiptext {
@@ -187,7 +189,7 @@ ul{
 
     .menu a:hover{
         background-color: transparent;
-        color: var(--grey);
+       
         
     }
     

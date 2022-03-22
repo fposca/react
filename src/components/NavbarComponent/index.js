@@ -6,7 +6,7 @@ const NavbarComponent = () => {
     return (
         <> <header className="header">
     
-        <a href="#" className="logo">FP</a>
+        <a href="#" className="logo"></a>
      
         <input className="side-menu" type="checkbox" id="side-menu"/>
         <label className="hamb" for="side-menu"><span className="hamb-line"></span></label>
