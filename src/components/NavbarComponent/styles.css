@@ -39,7 +39,7 @@ ul{
 /* Logo */
 .logo{
     display: inline-block;
-    background-image: url(fernando-posca.svg);
+    background-image: url(fernando-posca.png);
     width: 105px;
     height: 90px;
     background-position: center; /* Center the image */
