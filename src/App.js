@@ -8,16 +8,26 @@ import ItemCount from './components/ItemCount';
 
 function App() {
   
-  const bienvenido ="Bienvenido";
+  const ondAdd = (stock) => {
+    console.log({stock});
+  }
+ 
   
+  const bienvenido ="Bienvenido";
+
+
   return (
     <div>
      <NavbarComponent />
-     <ItemlistContainer firstName={bienvenido} />
-     <ItemCount valorInicial={"estado inicial"}></ItemCount>
-     <FooterComponent></FooterComponent>
+     <ItemlistContainer greeting={bienvenido} />
+     <div className='cardContainers'>
   
- 
+     <ItemCount stock={10} onAdd={ondAdd}></ItemCount>
+
+     </div>
+     <FooterComponent></FooterComponent>
+     
+
     </div>
   );
 }
