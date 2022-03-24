@@ -1,9 +1,9 @@
 
 import './App.css';
 import NavbarComponent from './components/NavbarComponent';
-import BodyComponent from './components/BodyComponent';
+import ItemlistContainer from './components/containers/ItemlistContainer';
 import FooterComponent from './components/FooterComponent';
-import ComponenteStateFull from './components/ComponenteStateFull';
+import ItemCount from './components/ItemCount';
 
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
   return (
     <div>
      <NavbarComponent />
-     <BodyComponent firstName={bienvenido} />
-     <ComponenteStateFull valorInicial={"estado inicial"}></ComponenteStateFull>
+     <ItemlistContainer firstName={bienvenido} />
+     <ItemCount valorInicial={"estado inicial"}></ItemCount>
      <FooterComponent></FooterComponent>
   
  

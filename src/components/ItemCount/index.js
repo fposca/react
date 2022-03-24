@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./styles.css"
+import imagenCard from './lolipop.png';
 
-const ComponenteStateFull = () => {
+const ItemCount = () => {
   //  Counter is a state initialized to 0
   const [counter, setCounter] = useState(0)
   
@@ -22,7 +23,7 @@ const ComponenteStateFull = () => {
   
   return (
     <div className="card">
-  
+   <img className="img"  src={imagenCard} />
       <div className="buttons">
       <button className="button button4"  onClick={handleClick2}>-</button>
         <div className="counter"> {counter}</div>
@@ -31,4 +32,4 @@ const ComponenteStateFull = () => {
     </div>
   )
 }
-export default ComponenteStateFull;
+export default ItemCount;

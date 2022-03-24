@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css"
 
-const BodyComponent = ({firstName} ) => {
+const ItemlistContainer = ({firstName} ) => {
     
     return (
         <><p className="bienvenido">{firstName}</p>
@@ -11,4 +11,4 @@ const BodyComponent = ({firstName} ) => {
     )
 }
 
-export default BodyComponent;
+export default ItemlistContainer;
