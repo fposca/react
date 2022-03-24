@@ -15,7 +15,7 @@ const ComponenteStateFull = () => {
   const handleClick2 = () => {
     // Counter state is decremented
     setCounter(counter - 1) 
-    if (counter <= 1) {
+    if (counter <= 0) {
       setCounter(counter + 0)
     }
   }
