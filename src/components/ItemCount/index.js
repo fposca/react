@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css"
-import imagenCard from './lolipop.png';
+import imagenCard from '../assets/lolipop.png';
 
 
 const ItemCount = ({stock, onAdd}) => {

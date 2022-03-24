@@ -26,9 +26,8 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  background-color: #efefef;
   border-radius: 4px;
-  margin-bottom: 10px;
+
 }
 
 .button {
