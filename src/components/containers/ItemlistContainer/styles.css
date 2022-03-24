@@ -1,8 +1,15 @@
 .bienvenido {
     padding: 20px;
     width: 100%;
-    margin: auto;
-    height: 600px;
    
+}
+
+.position {
+    position: relative;
+    left: 228px;
+    top: -148px;
+}
+.contenedor-card {
+    display: flex;
 
 }

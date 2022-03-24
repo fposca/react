@@ -5,6 +5,7 @@ import imagenCard from './lolipop.png';
 
 const ItemCount = ({stock, onAdd}) => {
 
+  
   const [quantity, setQuantity] = useState(1)
   
 

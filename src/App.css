@@ -47,7 +47,9 @@ table {
 	border-spacing: 0;
 }
 
-.cardContainers {
-	width: 500px;
-	height: 100%;
+
+.flexiCard {
+    width: 100%;
+    display: flex;
 }
+
