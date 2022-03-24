@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root{
-    --white: #f9f9f9;
+    --white: hsl(0, 0%, 98%);
     --black: #984a8d;
     --grey: #85888C;
 }
@@ -34,6 +34,7 @@ ul{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 /* Logo */
@@ -170,6 +171,22 @@ ul{
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
+  }
+
+  .something {
+    margin-left: 23px;
+    border-radius: 50%;
+    background: yellow;
+    padding: 5px;
+    text-align: center;
+    top: 21px;
+    position: absolute;
+    /* margin-top: -4px; */
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
   }
 
 /* Responsiveness */
