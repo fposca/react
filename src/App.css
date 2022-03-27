@@ -53,3 +53,8 @@ table {
     display: flex;
 }
 
+.height {
+	display: block;
+	height: 100px;
+	width: 100%;
+  }

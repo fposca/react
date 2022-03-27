@@ -1,8 +1,9 @@
 
 import './App.css';
 import NavbarComponent from './components/NavbarComponent';
-import ItemlistContainer from './components/containers/ItemlistContainer';
+import Itemlist from './components/containers/Itemlist';
 import FooterComponent from './components/FooterComponent';
+
 
 
 
@@ -15,9 +16,10 @@ function App() {
   return (
     <div>
      <NavbarComponent />
-     <ItemlistContainer greeting={bienvenido} />
+     <Itemlist greeting={bienvenido} />
+     <div className="height"></div>
      <FooterComponent></FooterComponent>
-     
+ 
 
     </div>
   );

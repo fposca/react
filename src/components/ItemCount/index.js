@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./styles.css"
-import imagenCard from '../assets/lolipop.png';
 
 
-const ItemCount = ({stock, onAdd}) => {
+
+const ItemCount = ({stock, onAdd} ) => {
 
   
   const [quantity, setQuantity] = useState(1)
@@ -24,16 +24,17 @@ const ItemCount = ({stock, onAdd}) => {
   }
   
   return (
-    <div className="card">
-   <img className="img"  src={imagenCard} />
+    <><div className="card">
+
       <div className="buttons">
-      <button className="button button4"  onClick={handleDecrement}>-</button>
+        <button className="button button4" onClick={handleDecrement}>-</button>
         <div className="counter"> {quantity}</div>
         <button className="button button5" onClick={handleAdd}>+</button>
       </div>
-      <button onClick={()=> onAdd(quantity)} className="button buttonAdd">ADD</button>
+      <button onClick={() => onAdd(quantity)} className="button buttonAdd">ADD</button>
 
-    </div>
+    </div></>
+   
   )
 }
 export default ItemCount;
