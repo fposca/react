@@ -5,35 +5,38 @@ import "./styles.css"
 
 const ItemCount = ({products,stock}) => {
 
+  
+  const [quantity, setQuantity] = useState(1)
+  
 
-    
-  const [initial, setInitial]=useState(1);
-
+  const handleDecrement = () => {
+    if (quantity > 1 ){
+      setQuantity(quantity - 1)
+    }
+  }
   const add =()=>{
-      if(stock>0) alert(`Se agrego ${initial} unidad/es del producto seleccionado al carrito`);
-      else alert("no hay stock disponible")
-  }
-  const plus =()=>{
-      if(initial<stock)setInitial(initial+1);
-      
-      
-  }
-  const min =()=>{
-      if (initial>1)setInitial(initial-1);
-  }
-return (
-    <>
+   console.log (`Se agrego ${quantity} unidad/es del producto seleccionado al carrito`) 
+ 
+}
+
+  const handleAdd = () => {
     
-    <div className="card">
+    if (quantity < stock) {
+      setQuantity(quantity + 1)
+    }
+  }
+  
+  return (
+    <>  <div className="card">
     <div className="id">{products.id}</div>
     <div className="titulo">{products.title}</div>
     
     <div><img className="imagen" src={products.image} /></div>
     <div className="precio">$ {products.price}</div>
       <div className="buttons">
-        <button className="button button4" onClick={min}>-</button>
-        <div className="counter"> {initial}</div>
-        <button className="button button5" onClick={plus}>+</button>
+        <button className="button button4" onClick={handleDecrement}>-</button>
+        <div className="counter"> {quantity}</div>
+        <button className="button button5" onClick={handleAdd}>+</button>
       </div>
       <button onClick={add} className="button buttonAdd">ADD</button>
 

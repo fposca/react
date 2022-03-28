@@ -3,8 +3,8 @@
   flex-direction: column;
   position: relative;
   margin-bottom: 20px;
-  justify-content: space-evenly;
-
+  justify-content: space-around;
+  font-size: 300%;
   /* position: absolute; */
   border-radius: 5px;
   background: #fff;
@@ -14,9 +14,9 @@
   text-align: center;
   font-family: arial;
   /* top: 151px; */
-  max-width: 255px;
+  max-width: 205px;
   /* width: 100%; */
-  height: 320px;
+  height: 280px;
   margin-left: 15px;
   padding: 15px;
 }
@@ -92,28 +92,4 @@
 .img {
     max-width: 150px;
     margin: auto;
-}
-.imagen {
-  max-width: 50px;
-    margin: auto;
-}
-
-.titulo {
-  font-size: 14px;
-  font-weight: bold;
-  color: gray;
-}
-
-.id {
-  font-size: 11px;
-  font-weight: bold;
-  color: rgba(245, 0, 233, 0.568);
-}
-
-.precio {
-  font-size: 18px;
-  padding: 10px;
-  font-weight: bold;
-  
-
 }

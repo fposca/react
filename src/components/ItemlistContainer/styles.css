@@ -1,20 +1,97 @@
-.bienvenido {
-    padding: 20px;
-    width: 100%;
-   
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+  justify-content: space-around;
+ 
+  border-radius: 5px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  /* margin: auto; */
+  text-align: center;
+  font-family: arial;
+  /* top: 151px; */
+  max-width: 225px;
+  /* width: 100%; */
+  height: 350px;
+  margin-left: 15px;
+  padding: 15px;
 }
 
-.position {
-    position: relative;
-    left: 228px;
-    top: -148px;
+.buttons {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+
 }
-.contenedor-card {
+
+.button {
+
+    border: none;
+    color: white;
+    padding: 3px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+
+
+  .buttonAdd {
+    background-color: rgb(228, 11, 163);
+    color: white;
+    
+  }
+  
+  .buttonAdd:hover {background-color: #ff3ace;}
+  .buttonAdd:active {background-color: #cc00ff;}
+
+  .button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(190 79 157);
+  }
+  
+  .button4:hover {background-color: #e7e7e7;}
+  .button4:active {background-color: #7a7a7a;}
+  
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(190 79 157);
+  }
+  
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .button5:active {
+    background-color: #aaaaaa;
+ 
+  }
+
+  .counter {
     display: flex;
-    flex-direction: row;
-    /* z-index: 0; */
+    text-align: center;
+    font-size: 18px;
+    color: #a923ce;
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    font-weight: bold;
+}
 
+.img {
+    max-width: 150px;
+    margin: auto;
+}
+.bienvenido {
+  padding: 20px;
 }

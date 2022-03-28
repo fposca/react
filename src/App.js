@@ -1,7 +1,7 @@
 
 import './App.css';
 import NavbarComponent from './components/NavbarComponent';
-import ItemlistContainer from './components/ItemlistContainer';
+import ItemlistContainer from './components/ItemListContainer';
 import FooterComponent from './components/FooterComponent';
 
 
@@ -17,10 +17,10 @@ function App() {
     <div>
      <NavbarComponent />
 
-     <ItemlistContainer greetings={bienvenido}/>
+<ItemlistContainer greetings={bienvenido}/>
 
-     <div className="height"></div>
-     <FooterComponent></FooterComponent>
+<div className="height"></div>
+<FooterComponent></FooterComponent>
  
 
     </div>

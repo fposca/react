@@ -59,6 +59,38 @@ table {
 	width: 100%;
   }
 
+  .imagen {
+	max-width: 50px;
+	  margin: auto;
+  }
+  
+  .titulo {
+	font-size: 14px;
+	font-weight: bold;
+	color: gray;
+	padding: 10px;
+  }
+  
+  .id {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 6px;
+    background: cornflowerblue;
+    top: 9px;
+    border-radius: 50%;
+    padding: 7px;
+  }
+  
+  .precio {
+	font-size: 18px;
+	padding: 10px;
+	font-weight: bold;
+	
+  }  
   .contenedor-card {
     display: flex;
     flex-direction: row;
