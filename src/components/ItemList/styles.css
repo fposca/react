@@ -1,25 +1,3 @@
-.card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-bottom: 20px;
-  justify-content: space-evenly;
-
-  /* position: absolute; */
-  border-radius: 5px;
-  background: #fff;
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-  /* margin: auto; */
-  text-align: center;
-  font-family: arial;
-  /* top: 151px; */
-  max-width: 255px;
-  /* width: 100%; */
-  height: 320px;
-  margin-left: 15px;
-  padding: 15px;
-}
 
 .buttons {
   width: 100%;
@@ -92,19 +70,4 @@
 .img {
     max-width: 150px;
     margin: auto;
-}
-.imagen {
-  max-width: 50px;
-    margin: auto;
-}
-
-.titulo {
-  font-size: 14px;
-  font-weight: bold;
-  color: gray;
-}
-
-.precio {
-  font-size: 12px;
-
 }

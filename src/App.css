@@ -58,3 +58,13 @@ table {
 	height: 100px;
 	width: 100%;
   }
+
+  .contenedor-card {
+    display: flex;
+    flex-direction: row;
+    /* z-index: 0; */
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}

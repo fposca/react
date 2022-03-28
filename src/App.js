@@ -1,7 +1,7 @@
 
 import './App.css';
 import NavbarComponent from './components/NavbarComponent';
-import Itemlist from './components/containers/Itemlist';
+import ItemlistContainer from './components/ItemlistContainer';
 import FooterComponent from './components/FooterComponent';
 
 
@@ -16,7 +16,9 @@ function App() {
   return (
     <div>
      <NavbarComponent />
-     <Itemlist greeting={bienvenido} />
+
+     <ItemlistContainer greetings={bienvenido}/>
+
      <div className="height"></div>
      <FooterComponent></FooterComponent>
  
