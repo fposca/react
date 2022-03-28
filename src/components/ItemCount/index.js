@@ -25,9 +25,11 @@ return (
     <>
     
     <div className="card">
+    <div className="id">{products.id}</div>
     <div className="titulo">{products.title}</div>
+    
     <div><img className="imagen" src={products.image} /></div>
-    <div className="precio">{products.price}</div>
+    <div className="precio">$ {products.price}</div>
       <div className="buttons">
         <button className="button button4" onClick={min}>-</button>
         <div className="counter"> {initial}</div>
