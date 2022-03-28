@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ItemList from "../containers/Itemlist"
+import Itemlist from "../containers/Itemlist";
 
 
 import "./styles.css"
@@ -34,7 +34,7 @@ const ItemlistContainer = ({greetings}) => {
    
         <h1 className="bienvenido">{greetings}</h1>
         <div className="contenedor-card">
-        <ItemList 
+        <Itemlist 
         products={products}
         stock={stock}/>
         </div>

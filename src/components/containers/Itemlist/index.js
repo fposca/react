@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemCount from '../../ItemCount'
 
-const ItemList = ({products,stock}) => {
+const Itemlist = ({products,stock}) => {
 
 
   return (
@@ -17,4 +17,4 @@ const ItemList = ({products,stock}) => {
   )
 }
 
-export default ItemList
+export default Itemlist
