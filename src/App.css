@@ -107,7 +107,8 @@ table {
 .border{
 
   border-radius: 200px;
-  max-width: 200px;   
+  max-width: 200px; 
+  border: 15px solid #4bc9f0;  
 }
 
 h1{

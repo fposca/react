@@ -16,6 +16,7 @@ const ItemDetail = ({personaje}) => {
     }
 
     return (
+       <div className='content'>
         <div style={{
             display: 'flex',
             flexDirection: 'row',
@@ -30,7 +31,7 @@ const ItemDetail = ({personaje}) => {
             }}
             alt="personaje-img"
             />
-            <div>
+            <div className='debajo'>
                 <h1>Name: {personaje.name}</h1>
                 <h2>Species: {personaje.species}</h2>
                 {quantity === 0 ? 
@@ -42,6 +43,7 @@ const ItemDetail = ({personaje}) => {
                     <button className="button button5"   onClick={() => navigate('/cart')} >Finalizar compra</button>     
                 }
             </div>
+        </div>
         </div>
     )
 }
