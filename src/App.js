@@ -1,31 +1,22 @@
-
 import './App.css';
-import NavbarComponent from './components/NavbarComponent';
-import ItemlistContainer from './components/ItemlistContainer';
-import FooterComponent from './components/FooterComponent';
+import NavBarComponent from './components/NavbarComponent';
 import ItemDetailContainer from './components/containers/ItemDetailContainer';
-
-
-
+import ItemListContainer from './components/containers/ItemListContainer'
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
-
-  
-  const bienvenido ="Bienvenido";
-
-
   return (
-    <div>
-     <NavbarComponent />
-<ItemDetailContainer></ItemDetailContainer>
-{/* <ItemlistContainer greetings={bienvenido}/> */}
-
-<div className="height"></div>
-<FooterComponent></FooterComponent>
- 
-
-    </div>
-  );
+    <BrowserRouter>
+      <NavBarComponent/>
+      <Routes>
+        <Route path = '/' element = {<ItemListContainer/>}/>
+        <Route path = '/category/:id' element = {<ItemListContainer/>} />
+        <Route path = '/item/:id' element = {<ItemDetailContainer/>} />
+      {/* <ItemListContainer greeting={"Bienvenidos a nuestra after app"}/> */}
+      {/* <ItemDetailContainer/> */}
+      </Routes>
+    </BrowserRouter>
+    );
 }
 
 export default App;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Itemlist from "../containers/Itemlist";
 
 
@@ -8,14 +9,14 @@ import "./styles.css"
 const ItemlistContainer = ({greetings}) => {
 
     const [products, setProducts] = useState([]);
-
+    const {id} = useParams ()
     const stock=10;
 
     useEffect(()=> {
      
       ( async ()=> {
           try {
-              const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+              const response = await fetch('https://rickandmortyapi.com/api/character/');
              
               const data = await response.json();
              

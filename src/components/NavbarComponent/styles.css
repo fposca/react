@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root{
-    --white: hsl(0, 0%, 98%);
-    --black: #984a8d;
+    --white: #333;
+    --black: #f2f2f2;
     --grey: #85888C;
 }
 
@@ -41,7 +41,7 @@ ul{
 .logo{
     display: inline-block;
     background-image: url(../assets/fernando-posca.png);
-    width: 105px;
+    width: 169px;
     height: 90px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
