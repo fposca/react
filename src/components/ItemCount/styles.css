@@ -42,18 +42,18 @@
 
 
   .buttonAdd {
-    background-color: rgb(228, 11, 163);
+    background-color: rgb(2 171 191);;
     color: white;
     
   }
   
-  .buttonAdd:hover {background-color: #ff3ace;}
-  .buttonAdd:active {background-color: #cc00ff;}
+  .buttonAdd:hover {background-color: #1a95ba;}
+  .buttonAdd:active {background-color: #0f8da0;}
 
   .button4 {
     background-color: white;
     color: black;
-    border: 2px solid rgb(190 79 157);
+    border: 2px solid rgb(79, 157, 190);
   }
   
   .button4:hover {background-color: #e7e7e7;}
@@ -62,7 +62,7 @@
   .button5 {
     background-color: white;
     color: black;
-    border: 2px solid rgb(190 79 157);
+    border: 2px solid rgb(79, 173, 190);
   }
   
   .button5:hover {
@@ -79,7 +79,7 @@
     display: flex;
     text-align: center;
     font-size: 18px;
-    color: #a923ce;
+    color: rgb(2 171 191);
     align-items: center;
     font-weight: bold;
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import ItemCount from '../ItemCount';
-import { Link } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 const ItemDetail = ({personaje}) => {
-
+    const navigate = useNavigate();
     const [quantity, setQuantity] = React.useState(0)
-
+    
     const handleAdd = (quantity) => {
         console.log(quantity);
         setQuantity(quantity);
@@ -36,10 +36,10 @@ const ItemDetail = ({personaje}) => {
                 {quantity === 0 ? 
                     <ItemCount stock={10} onAdd={handleAdd}/> 
                     :
-                    <Link to="/Cart" style={{textDecoration: 'none'}}>
+                  
                                     
                               
-                    <button className="button button5" onClick={handleTerminate}>Finalizar compra</button>      </Link> 
+                    <button className="button button5"   onClick={() => navigate('/cart')} >Finalizar compra</button>     
                 }
             </div>
         </div>
