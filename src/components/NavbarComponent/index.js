@@ -11,7 +11,12 @@ const NavbarComponent = () => {
     return (
         <> <header className="header">
     
-        <a href="#" className="logo"></a>
+       
+        <Link to="/" style={{textDecoration: 'none'}}>
+        <div className="logo">  </div> 
+                    </Link>
+
+       
      
         <input className="side-menu" type="checkbox" id="side-menu"/>
         <label className="hamb" for="side-menu"><span className="hamb-line"></span></label>

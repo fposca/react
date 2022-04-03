@@ -29,7 +29,7 @@ const ItemDetailContainer = () => {
     return (
         <div style={{
             width: '600px',
-            height: '315px',
+            height: '400px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
