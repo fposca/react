@@ -11,7 +11,9 @@ const ItemDetail = ({personaje}) => {
         setQuantity(quantity);
     }
 
+
     const handleTerminate = () => {
+        navigate('/cart');
         console.log("Terminó la compra")
     }
 
@@ -40,7 +42,7 @@ const ItemDetail = ({personaje}) => {
                   
                                     
                               
-                    <button className="button button5"   onClick={() => navigate('/cart')} >Finalizar compra</button>     
+                    <button className="button button5"   onClick={(handleTerminate) } >Finalizar compra</button>     
                 }
             </div>
         </div>
