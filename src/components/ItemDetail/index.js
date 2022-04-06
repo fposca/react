@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ItemCount from '../ItemCount';
 import {  useNavigate } from 'react-router-dom';
+import { Shop } from '../Context/ShopProvider';
 
 const ItemDetail = ({personaje}) => {
     const navigate = useNavigate();
     const [quantity, setQuantity] = React.useState(0)
-    
+    const {addCart} = useContext(Shop);
+
+        const remove = () => {
+            setQuantity("");
+        console.log('aklgo');
+       
+    }
+
+
     const handleAdd = (quantity) => {
         console.log(quantity);
         setQuantity(quantity);
@@ -14,7 +23,8 @@ const ItemDetail = ({personaje}) => {
 
     const handleTerminate = () => {
         navigate('/cart');
-        console.log("Terminó la compra")
+        console.log("Terminó la compra");
+        addCart(personaje, quantity);
     }
 
     return (
@@ -39,10 +49,10 @@ const ItemDetail = ({personaje}) => {
                 {quantity === 0 ? 
                     <ItemCount stock={10} onAdd={handleAdd}/> 
                     :
-                  
-                                    
-                              
-                    <button className="button button5"   onClick={(handleTerminate) } >Finalizar compra</button>     
+                  <div>
+                    <button className="button button5"   onClick={(handleTerminate) } >Finalizar compra</button> 
+                    <button className="button button5"  onClick={(remove) }>Remove</button> 
+                       </div>
                 }
             </div>
         </div>

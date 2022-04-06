@@ -5,6 +5,8 @@ import "./styles.css"
 const ItemCount = ({stock, onAdd}) => {
 
   const [quantity, setQuantity] = useState(1);
+  
+ 
 
   const handleDecrement = () => {
       if (quantity > 1) {
@@ -12,10 +14,17 @@ const ItemCount = ({stock, onAdd}) => {
       }
   }
 
+  
+
   const handleAdd = () => {
       if (quantity < stock) {
           setQuantity(quantity + 1);
       }
+
+    
+     
+     
+        
   }
   
   return (
@@ -31,6 +40,7 @@ const ItemCount = ({stock, onAdd}) => {
         <button className="button button5" onClick={handleAdd}>+</button>
       </div>
       <button onClick={()=> onAdd(quantity) } type="button" className="button buttonAdd">ADD</button>
+      
 
     </div></>
    

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../../ItemDetail'
+import { db } from '../../../Firebase/config'
+import { doc, getDoc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
 
@@ -12,11 +14,22 @@ const ItemDetailContainer = () => {
 
         ( async ()=> {
             try {
-                const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
-                console.log(response);
-                const data = await response.json();
-                console.log(data);
-                setPersonaje(data);
+                // const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+                // console.log(response);
+                // const data = await response.json();
+                // console.log(data);
+                // setPersonaje(data);
+                const docRef = doc(db, "productos", id);
+                const docSnap = await getDoc(docRef);
+
+                if (docSnap.exists()) {
+                    console.log("Document data:", docSnap.data());
+                    setPersonaje({id: docSnap.id, ...docSnap.data()})
+                } else {
+                    // doc.data() will be undefined in this case
+                    console.log("No such document!");
+                }
+
             } catch (error) {
                 console.log(error);
             }
