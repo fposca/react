@@ -8,12 +8,6 @@ const ItemDetail = ({personaje}) => {
     const [quantity, setQuantity] = React.useState(0)
     const {addCart} = useContext(Shop);
 
-        const remove = () => {
-            setQuantity("");
-        console.log('aklgo');
-       
-    }
-
 
     const handleAdd = (quantity) => {
         console.log(quantity);
@@ -51,7 +45,7 @@ const ItemDetail = ({personaje}) => {
                     :
                   <div>
                     <button className="button button5"   onClick={(handleTerminate) } >Finalizar compra</button> 
-                    <button className="button button5"  onClick={(remove) }>Remove</button> 
+                   
                        </div>
                 }
             </div>

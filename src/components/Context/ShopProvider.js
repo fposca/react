@@ -29,6 +29,15 @@ const ShopProvider = ({ children }) => {
         }
 
     }
+    const removeItem = (id) => {
+        const cartFiltrado = cart.filter(elemento => elemento.id !== id);
+        setCart(cartFiltrado);
+    }
+    const clear = () => {
+        setCart([]);
+    }
+
+
     //Función auxiliar que me determina si el producto está o no en el cart
     const isInCart = (producto) => {
         return cart.find(elemento => elemento.id === producto.id);
@@ -36,7 +45,7 @@ const ShopProvider = ({ children }) => {
 
     return (
         <Shop.Provider value={{
-            addCart
+            cart, addCart, removeItem, clear 
         }}>
             {children}
         </Shop.Provider>

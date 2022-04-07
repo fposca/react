@@ -1,43 +1,49 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import ItemDetail from '../ItemDetail'
+import React, { useContext } from 'react'
+import { Shop } from '../Context/ShopProvider';
 
-
-const Cart = () => {
-    
-    const [personaje, setPersonaje] = useState({})
-
-    const {id} = useParams();
-
-    useEffect(()=> {
-
-        ( async ()=> {
-            try {
-                const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
-                console.log(response);
-                const data = await response.json();
-                console.log(data);
-                setPersonaje(data);
-            } catch (error) {
-                console.log(error);
-            }
-        })()
-
-    }, [id])
-
-    console.log(personaje);
-
+function Cart() {
+    const { cart, removeItem, clear } = useContext(Shop);
+  
+    const handleRemove = (id) => {
+      removeItem(id);
+    }
+    const handleClear = () => {
+      clear();
+    }
     return (
-        <div style={{
-            width: '600px',
-            height: '400px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-        }}>
-            <ItemDetail personaje={personaje}/>
-        </div>
+      <>
+      <div className='titulo'>Carrito de compras</div>
+         <div className='contenedor-card'>
+       
+      
+            {cart.map((row) => (
+              <div  className='card'
+                key={row.name}
+              
+              >
+                <div >
+                  {row.name}
+                </div>
+                <div >{row.species}</div>
+                <div ><img className="imagen-round " src={row.image} /></div>
+                <div><span className='cantidad'>Cantidad: {row.quantity}</span></div>
+               
+                <div >
+                  <div onClick={() => handleRemove(row.id)}>
+                  <div className='borrar'></div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          
+      
+      </div>
+      <div variant="outlined" onClick={handleClear}>
+     <div className='inline'> <span>Borrar todo</span> <span className='borrar2'></span></div>
+      </div>
+     
+      </>
     )
-}
-
-export default Cart;
+  }
+  
+  export default Cart;
