@@ -33,11 +33,12 @@ const Chekout = ({handleClose, cart, total}) => {
     return (
         <> 
        <div className="modalContainer">
-           <div className="modal">Título
+           <div className="modal">Generá tu orden
            <form onSubmit={onSubmit}>
             <input type="text" placeholder="Nombre" id="nombre" value ={nombre} onChange={e => setNombre (e.target.value)}/>
             <input  type="text"  placeholder="Direccion" value ={direccion} onChange={e => setDireccion (e.target.value)} id="direccion"/>
-            <button className='button button4' type="submit">Enviar</button>
+         
+            <button className='button button4 space min' type="submit">Enviar</button>
            </form>
 
            <div className="close" onClick={handleClose} >X</div>

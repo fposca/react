@@ -12,7 +12,7 @@
     align-items: center;
     align-content: flex-start;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .2);
 
 
 }
@@ -22,16 +22,24 @@
     height: auto;
     padding: 35px;
     z-index: 10000;
-    background-color: black;
+    background-color: rgba(0, 0, 0, .6);
     position: relative;
+    border-radius: 6px;
+    
 
 }
 
 .close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
 
+}
+
+.space {
+    float: right;
+    margin-top: 25px;
 }

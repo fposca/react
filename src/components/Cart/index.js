@@ -65,11 +65,13 @@ function Cart() {
    
     
       </div>
-      <div><span className='cantidad2'>Total: $ {suma}</span></div>
+     
 
-      <div ><button className='button button5 spacer' onClick={handleCheckout}>Ir al checkout</button>
+      <div ><button className='button button5 spacer min' onClick={handleCheckout}>Ir al checkout</button>
      {modal ? <Chekout handleClose = {handleClose} cart = {cart} total = {suma}/>: null }
      </div>
+     <hr className='line4'/>
+     <div><span className='cantidad2'>Total: $ {suma}</span></div>
      
       </>
     )
