@@ -32,7 +32,7 @@ const NavbarComponent = () => {
                                 <li>  <Link to="/category/Human" style={{textDecoration: 'none'}}>
                                     Human
                                 </Link></li>
-                <li>  <CartWidget/> <div className="something">{stock}</div> </li>
+                <li>  <CartWidget/></li>
             </ul>
            
         </nav>

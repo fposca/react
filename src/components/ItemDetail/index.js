@@ -20,6 +20,10 @@ const ItemDetail = ({personaje}) => {
         console.log("Terminó la compra");
         addCart(personaje, quantity);
     }
+    
+    const buy = () => {
+        navigate('/');
+    }
 
     return (
        <div className='content'>
@@ -44,7 +48,8 @@ const ItemDetail = ({personaje}) => {
                     <ItemCount stock={10} onAdd={handleAdd}/> 
                     :
                   <div>
-                    <button className="button button5"   onClick={(handleTerminate) } >Finalizar compra</button> 
+                    <button className="button button5 mar"   onClick={(handleTerminate) } >Comprar</button>
+                    <button className="button button5"   onClick={(buy) } >Navegar</button> 
                    
                        </div>
                 }

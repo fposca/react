@@ -37,23 +37,28 @@ function Cart() {
 
      : <div className='empty'>CARRITO VACIO</div>
 }
-        
+        <div className='card-list-2'>
+      <div className='widthi'>Imagen</div>
+      <div className='widthi'>Nombre</div>
+      <div className='widthi'>Especie</div>
+      <div className='widthi'>Cantidad</div>
+      <div className='widthi'>Precio</div>
+      <div className='widthi'>Eliminar</div>
+
+        </div>
          <div className='contenedor-card'>
        
          
             {cart.map((row) => (
-              <div  className='card'
+              <div  className='card-list'
                 key={row.name}
               
               >
-              
-                <div >
-                  {row.name}
-                </div>
-                <div >{row.species}</div>
-                <div ><img className="imagen-round " src={row.image} /></div>
-                <div><span className='cantidad'>Cantidad: {row.quantity}</span></div>
-                <div><span className='cantidad'>Precio: {row.price}</span></div>
+              <div className='widthi'><img className="imagen-round " src={row.image} /></div>
+                <div className='widthi'>{row.name}</div>
+                <div className='widthi'>{row.species}</div>
+                <div className='widthi'><span >{row.quantity}</span></div>
+                <div className='widthi'><span >{row.price}</span></div>
                 
            
                
@@ -80,6 +85,7 @@ function Cart() {
      </div>
      <hr className='line4'/>
      <div><span className='cantidad2'>Total: $ {suma}</span></div>
+     <span className='absolute'>{suma}</span>
      
 
       </>

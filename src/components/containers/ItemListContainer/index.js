@@ -10,6 +10,7 @@ const ItemListContainer = ({ greeting }) => {
     const navigate = useNavigate();
 
     console.log('el id es',id);
+   
 
     /* const onAdd = (count) => {
         console.log(`Se agregaron ${count} productos al carrito`);
@@ -29,6 +30,7 @@ const ItemListContainer = ({ greeting }) => {
                 querySnapshot.forEach((doc) => {
                     // doc.data() is never undefined for query doc snapshots
                     personajes.push({id: doc.id, ...doc.data()})
+                    console.log ('el personaje' ,personajes)
                 });
                 if (!id) {
                     setProducts(personajes);
@@ -69,7 +71,12 @@ const ItemListContainer = ({ greeting }) => {
                     })}
                </div>
                 :
-                <h2>Loading...</h2>
+                <div className='loader'>
+<div class="loadingio-spinner-rolling-uocte8vmc7i"><div class="ldio-3dhnbawiqub">
+<div></div>
+</div></div>
+
+                </div>
             }
         </div>
     )
