@@ -6,10 +6,10 @@ import { collection, getDocs } from "firebase/firestore";
 const ItemListContainer = ({ greeting }) => {
 
     const [products, setProducts] = useState([]);
-    const { id } = useParams() //Siempre trae un string
+    const {id} = useParams(); //Siempre trae un string
     const navigate = useNavigate();
 
-    console.log(id);
+    console.log('el id es',id);
 
     /* const onAdd = (count) => {
         console.log(`Se agregaron ${count} productos al carrito`);
@@ -35,7 +35,7 @@ const ItemListContainer = ({ greeting }) => {
                 } else {
                     //Filtrar según el id
                     const personajesFiltrados = personajes.filter(personaje => personaje.species === id)
-                    console.log(personajesFiltrados);
+                    console.log('el personaje filtardo es',personajesFiltrados);
                     setProducts(personajesFiltrados);
                 }
             } catch (error) {

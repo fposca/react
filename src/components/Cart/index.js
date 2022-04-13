@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react'
 
+
 import Chekout from '../Chekout';
 import { Shop } from '../Context/ShopProvider';
 
@@ -28,17 +29,24 @@ function Cart() {
     useEffect(()=> {
         setSuma(sumaTotal())
       }, [sumaTotal])
-    return (
+    return ( 
+      
       <>
+   {cart.length > 0 ?
       <div className='titulo'>Carrito de compras</div>
+
+     : <div className='empty'>CARRITO VACIO</div>
+}
+        
          <div className='contenedor-card'>
        
-      
+         
             {cart.map((row) => (
               <div  className='card'
                 key={row.name}
               
               >
+              
                 <div >
                   {row.name}
                 </div>
@@ -47,7 +55,7 @@ function Cart() {
                 <div><span className='cantidad'>Cantidad: {row.quantity}</span></div>
                 <div><span className='cantidad'>Precio: {row.price}</span></div>
                 
-               
+           
                
                 <div >
                   <div onClick={() => handleRemove(row.id)}>
@@ -73,7 +81,9 @@ function Cart() {
      <hr className='line4'/>
      <div><span className='cantidad2'>Total: $ {suma}</span></div>
      
+
       </>
+     
     )
   }
   

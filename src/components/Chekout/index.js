@@ -19,10 +19,11 @@ const Chekout = ({handleClose, cart, total}) => {
                 nombre: nombre,
                 direccion: direccion
             },
-            items: {
-                cart : cart   
-            },
-            total:total
+            items:         cart
+            ,
+            total:total,
+            createdAt : new Date ().toLocaleString()
+
         }
         console.log(order);
         const orderCollection = collection (db, 'orders');
