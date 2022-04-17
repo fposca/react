@@ -85,7 +85,7 @@ function Cart() {
      </div>
      <hr className='line4'/>
      <div><span className='cantidad2'>Total: $ {suma}</span></div>
-     <span className='absolute'>{suma}</span>
+     
      
 
       </>

@@ -45,7 +45,7 @@ const ItemDetail = ({personaje}) => {
                 <h1>Name: {personaje.name}</h1>
                 <h2>Species: {personaje.species}</h2>
                 {quantity === 0 ? 
-                    <ItemCount stock={10} onAdd={handleAdd}/> 
+                    <ItemCount stock={personaje.stock} onAdd={handleAdd}/> 
                     :
                   <div>
                     <button className="button button5 mar"   onClick={(handleTerminate) } >Comprar</button>

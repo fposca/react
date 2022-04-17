@@ -5,7 +5,7 @@ const FooterComponent = () => {
     
     return (
         <> <div className="footer">
-        <p className="inside">Footer</p>
+        <p className="inside">Rick and Morty - 2022</p>
       </div>
 
         </>

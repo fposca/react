@@ -36,7 +36,11 @@ const ShopProvider = ({ children }) => {
     const clear = () => {
         setCart([]);
     }
-
+//funcionm para que se juestre el numerito en el carrito
+    const conteoItems = () => {
+        const suma = cart.reduce((acc, item) => acc += (item.quantity), 0)
+        return suma;
+    }
 
     //Función auxiliar que me determina si el producto está o no en el cart
     const isInCart = (producto) => {
@@ -50,7 +54,7 @@ const ShopProvider = ({ children }) => {
 
     return (
         <Shop.Provider value={{
-            cart, addCart, removeItem, clear, sumaTotal 
+            cart, addCart, removeItem, clear, sumaTotal, conteoItems 
         }}>
             {children}
         </Shop.Provider>
